@@ -4,6 +4,7 @@ services:
     ports:
       - "5002:5000"  
     volumes:
+      - app_code_volume:/app
       - app_data_volume:/data
     environment:
       - FLASK_ENV=production
@@ -11,3 +12,4 @@ services:
 
 volumes:
   app_data_volume:
+  app_code_volume:
