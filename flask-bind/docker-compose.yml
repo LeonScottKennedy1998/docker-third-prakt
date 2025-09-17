@@ -5,7 +5,7 @@ services:
       - "5001:5000"
     volumes:
       - ./app:/app
-      - ./data:/data
+      - ./app/data:/data
     environment:
       - FLASK_ENV=development
       - APP_NAME=Bind_Mount_App
