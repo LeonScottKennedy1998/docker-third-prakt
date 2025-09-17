@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Счетчик посещений</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .stats { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать! Это статистика Bind Mount</h1>
+        <div class="stats">
+            <h2>Статистика посещений:</h2>
+            <p>Всего посещений: <strong>{{ visits }}</strong></p>
+            <p>Последнее посещение: <strong>{{ last_visit }}</strong></p>
+        </div>
+        
+        <p><a href="/api/stats">Посмотреть полную статистику (JSON)</a></p>
+    </div>
+</body>
+</html>

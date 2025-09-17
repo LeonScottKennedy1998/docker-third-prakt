@@ -1,0 +1,14 @@
+services:
+  webapp-bind:
+    build: .
+    ports:
+      - "5001:5000"   
+    volumes:
+      - ./app:/app
+      - app_data_bind:/data
+    environment:
+      - FLASK_ENV=development
+      - APP_NAME=Bind_Mount_App
+
+volumes:
+  app_data_bind:

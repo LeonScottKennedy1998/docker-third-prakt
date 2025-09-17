@@ -1,0 +1,13 @@
+services:
+  webapp-volume:
+    build: .
+    ports:
+      - "5002:5000"  
+    volumes:
+      - app_data_volume:/data
+    environment:
+      - FLASK_ENV=production
+      - APP_NAME=Volume_App
+
+volumes:
+  app_data_volume:
